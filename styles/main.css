@@ -1,0 +1,58 @@
+body {
+  background-image: url(/img/fondo1.jpg);
+}
+body #nav {
+  border: 3px white;
+}
+body #section0 {
+  height: 900px;
+  width: 100%;
+}
+body #section0 #div0 {
+  display: flex;
+  top: 300px;
+}
+body #section0 #div0 #text0 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  color: aliceblue;
+}
+body #section1 {
+  background-image: url(/img/fondo2.jpg);
+  height: 1000px;
+  width: 100%;
+}
+body #section2 {
+  background-image: url(/img/fondo3.jpg);
+  height: 1000px;
+  width: 100%;
+}
+body .carousel-inner {
+  max-height: 39rem;
+}
+
+#section3 {
+  background-image: url(/img/fondo4.jpg);
+  height: 1000px;
+  width: 100%;
+}
+
+#section4 {
+  background-image: url(/img/fondo3.jpg);
+  height: 1000px;
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+  background-color: grey;
+}
+
+#nav a {
+  font-size: 18px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=main.css.map */
