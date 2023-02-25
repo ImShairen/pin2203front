@@ -28,9 +28,6 @@ body #section2 {
   height: 1000px;
   width: 100%;
 }
-body .carousel-inner {
-  max-height: 39rem;
-}
 
 #section3 {
   background-image: url(/img/fondo4.jpg);
