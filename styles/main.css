@@ -2,21 +2,31 @@ body {
   background-image: url(/img/fondo1.jpg);
   background-repeat: no-repeat;
 }
+
 body .header #nav {
   border: 3px rgb(255, 255, 255);
 }
+
 body .header #nav a {
   font-size: 18px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
+
+body .header #nav a:hover {
+  color: rgb(138, 161, 175);
+}
+
 body #section0 {
   height: 900px;
+  max-height: 900px;
   width: 100%;
 }
+
 body #section0 #div0 {
   padding: 150px;
 }
+
 body #section0 #div0 #text0 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 300%;
@@ -25,66 +35,212 @@ body #section0 #div0 #text0 {
   color: aliceblue;
   max-width: 600px;
 }
+
 body #section0 #div0 #text0-2 {
   color: aliceblue;
   max-width: 400px;
 }
+
 body #section1 {
   background-image: url(/img/fondo2.jpg);
   background-repeat: no-repeat;
   height: 1000px;
   width: 100%;
 }
+
 body #section1 #div1 {
   padding: 340px;
   margin-left: 300px;
 }
+
 body #section1 #div1 #h1-1-1 {
   color: rgb(138, 161, 175);
   font-size: 350%;
 }
+
 body #section1 #div1 #h1-1-2 {
   font-size: 350%;
+  margin-bottom: 35px;
 }
+
 body #section1 #div1 #text1 {
   max-width: 800px;
 }
+
 body #section2 {
   background-image: url(/img/fondo3.jpg);
   background-repeat: no-repeat;
   height: 1000px;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 170px;
   padding-left: 400px;
   padding-bottom: 100px;
 }
-body #section2 #background2 {
+
+body #background2 {
   background-image: url(/img/fondo-section-2.jpg);
   background-size: cover;
   max-width: 1300px;
   padding-top: 200px;
   padding-left: 500px;
 }
-body #section3 {
+
+#section3 {
   background-image: url(/img/fondo4.jpg);
   height: 790px;
   width: 100%;
   padding-left: 200px;
   padding-top: 300px;
 }
-body #section3 #div3 {
+
+#section3 #div3 {
   max-width: 1100px;
 }
-body #section4 {
+
+#section4 {
   background-image: url(/img/fondo3.jpg);
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 800px;
   width: 100%;
 }
-body footer {
+
+#section4 #div4 {
+  padding-top: 10%;
+  padding-left: 10%;
+  max-width: 800px;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+#section4 #div4 .formulario {
+  padding: 20px;
+  gap: 40px;
+  background-color: none;
+  padding-left: 40px;
+}
+
+#section4 #div4 .formulario .formulario__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#section4 #div4 .formulario .formulario__grupo-input {
+  position: relative;
+}
+
+#section4 #div4 .formulario .formulario__input {
+  width: 100%;
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: 0.3s ease all;
+}
+
+#section4 #div4 .formulario .formulario__input:focus {
+  border: 3px solid rgb(174, 207, 223);
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+#section4 #div4 .formulario .formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+#section4 #div4 .formulario .formulario__input-error-activo {
+  display: block;
+}
+
+#section4 #div4 .formulario .formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+#section4 #div4 .formulario .formulario__mensaje {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 45px;
+  line-height: 45px;
+  background-color: rgb(255, 97, 97);
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+#section4 #div4 .formulario .formulario__mensaje-activo {
+  display: block;
+}
+
+#section4 #div4 .formulario .formulario__grupo-btn-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section4 #div4 .formulario .formulario__btn {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background-color: rgb(57, 71, 87);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+#section4 #div4 .formulario .formulario__btn:hover {
+  box-shadow: 3px 0px 30px rgb(163, 163, 163);
+}
+
+#section4 #div4 .formulario .formulario__mensaje-exito {
+  font-size: 14px;
+  color: rgb(80, 240, 187);
+  display: none;
+}
+
+#section4 #div4 .formulario .formulario__mensaje-exito-activo {
+  display: block;
+}
+
+#section4 #div4 .formulario .formulario__grupo-correcto .formulario__validacion-estado {
+  color: rgb(80, 240, 187);
+  opacity: 1;
+}
+
+#section4 #div4 .formulario .formulario__grupo-incorrecto .formulario__label {
+  color: rgb(255, 97, 97);
+}
+
+#section4 #div4 .formulario .formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: rgb(255, 97, 97);
+  opacity: 1;
+}
+
+#section4 #div4 .formulario .formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid rgb(255, 97, 97);
+}
+
+footer {
+  text-align: center;
   height: 50px;
   background-color: rgb(129, 158, 175);
   color: aliceblue;
 }
+
+
 
 /*# sourceMappingURL=main.css.map */
