@@ -1,71 +1,110 @@
 body {
     background-image: url(/img/fondo1.jpg);
+    background-repeat: no-repeat;
 
-    #nav {
-        border: 3px white;
+    .header {
+        #nav {
+            border: 3px rgb(255, 255, 255);
+        }
+
+        #nav a {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
     }
-
 
     #section0 {
         height: 900px;
         width: 100%;
 
         #div0 {
-            display: flex;
-            top: 300px;
+            padding: 150px;
 
             #text0 {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 300%;
+                font-weight: bold;
                 text-align: left;
-                margin-left: 30px;
                 color: aliceblue;
+                max-width: 600px;
+            }
+
+            #text0-2 {
+                color: aliceblue;
+                max-width: 400px;
             }
         }
     }
 
     #section1 {
         background-image: url(/img/fondo2.jpg);
+        background-repeat: no-repeat;
         height: 1000px;
         width: 100%;
+
+        #div1 {
+            padding: 340px;
+            margin-left: 300px;
+
+
+            #h1-1-1 {
+                color: rgb(138, 161, 175);
+                font-size: 350%;
+            }
+
+            #h1-1-2 {
+                font-size: 350%;
+            }
+
+            #text1 {
+                max-width: 800px;
+            }
+        }
 
     }
 
     #section2 {
         background-image: url(/img/fondo3.jpg);
+        background-repeat: no-repeat;
         height: 1000px;
         width: 100%;
+        padding-top: 100px;
+        padding-left: 400px;
+        padding-bottom: 100px;
+
+        #background2 {
+            background-image: url(/img/fondo-section-2.jpg);
+            background-size: cover;
+            max-width: 1300px;
+            padding-top: 200px;
+            padding-left: 500px;
+        }
     }
 
-    // .carousel-inner {
-    //     max-height: 39rem;
-    // }
+    #section3 {
+        background-image: url(/img/fondo4.jpg);
+        height: 790px;
+        width: 100%;
+        padding-left: 200px;
+        padding-top: 300px;
 
-    // #div2 {
-    //     max-height: 39rem;
-    // }
-}
+        #div3 {
+            max-width: 1100px;
+        }
+    }
 
-#section3 {
-    background-image: url(/img/fondo4.jpg);
-    height: 1000px;
-    width: 100%;
+    #section4 {
+        background-image: url(/img/fondo3.jpg);
+        background-repeat: no-repeat;
+        height: 1000px;
+        width: 100%;
 
-}
+    }
 
-#section4 {
-    background-image: url(/img/fondo3.jpg);
-    height: 1000px;
-    width: 100%;
-
-}
-
-footer {
-    height: 50px;
-    background-color: grey;
-}
-
-#nav a {
-    font-size: 18px;
-    font-weight: bold;
-    color: aliceblue;
+    footer {
+        height: 50px;
+        background-color: rgb(129, 158, 175);
+        color: aliceblue;
+    }
 }
